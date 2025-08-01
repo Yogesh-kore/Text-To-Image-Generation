@@ -1,0 +1,81 @@
+
+3. Enter a text prompt and click "Generate" to create an image.
+
+## How It Works
+
+The application uses:
+- **Flask**: For the web server and routing
+- **Stable Diffusion**: A state-of-the-art text-to-image model
+- **PyTorch**: For deep learning operations
+
+The generation process happens when a user submits a prompt. The application sends this prompt to the Stable Diffusion model, which generates an image. The image is then saved to the server and displayed to the user.
+
+## Project Structure
+Text-To-Image-Generation/
+├── app.py                 # Main Flask application
+├── static/
+│   ├── images/            # Generated images storage
+│   └── style.css          # CSS styling
+└── templates/
+└── index.html         # HTML template
+
+## Adding to GitHub
+
+To add this project to GitHub:
+
+1. Create a new repository on GitHub:
+   - Go to [GitHub](https://github.com) and sign in
+   - Click the "+" icon in the top right and select "New repository"
+   - Name your repository (e.g., "Text-To-Image-Generation")
+   - Choose public or private visibility
+   - Click "Create repository"
+
+2. Initialize Git in your local project folder (if not already done):
+
+```bash
+git init
+```
+
+3. Add your files to Git:
+
+```bash
+git add .
+```
+
+4. Commit your changes:
+
+```bash
+git commit -m "Initial commit"
+```
+
+5. Add the GitHub repository as a remote:
+
+```bash
+git remote add origin https://github.com/Yogesh-kore/Text-To-Image-Generation.git
+```
+
+6. Push your code to GitHub:
+
+```bash
+git push -u origin main
+```
+
+Note: If your default branch is named "master" instead of "main", use that instead.
+
+## Future Enhancements
+
+- Add more model options
+- Implement image customization parameters (size, style, etc.)
+- Add user authentication
+- Create a gallery of previously generated images
+- Implement a loading indicator during image generation
+
+## License
+
+MIT
+
+## Acknowledgements
+
+- [Stability AI](https://stability.ai/) for the Stable Diffusion model
+- [Hugging Face](https://huggingface.co/) for model hosting and APIs
+- [Flask](https://flask.palletsprojects.com/) for the web framework
