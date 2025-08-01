@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Text to Image Generator</h1>
+        <form id="promptForm" method="post" action="/generate">
+            <input type="text" name="prompt" placeholder="Enter your prompt here..." required>
+            <button type="submit">Generate</button>
+        </form>
+        {% if image_url %}
+        <div class="result">
+            <h2>Generated Image:</h2>
+            <img src="{{ image_url }}" alt="Generated Image">
+            <a href="{{ image_url }}" download="generated_image.png">Download Image</a>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
